@@ -5,7 +5,7 @@ public class Main {
 
 
         Scheduler sch = Scheduler.getInstance();
-        Task a [] = new Task[5];
+        Task a[] = new Task[5];
         for (int i = 0; i < 5; i++) {
             a[i] = new Task(String.valueOf(i));
         }

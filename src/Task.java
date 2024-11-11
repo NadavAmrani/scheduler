@@ -23,7 +23,7 @@ public class Task extends Thread {
                     }
                 }
             }
-            System.out.println("the message is: " + this.data[counter--]);
+            System.out.println("the message is: " + this.data[counter--] + ",  ID is: "+getID());
             try {
                 Thread.sleep(1000);
             } catch (InterruptedException e) {
@@ -37,6 +37,6 @@ public class Task extends Thread {
     }
 
     public String getID() {
-        return ID;
+        return this.ID;
     }
 }
